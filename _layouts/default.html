@@ -12,6 +12,14 @@ layout: base
   </div>
 </header>
 
+<nav>
+  <div id="navbar">
+    {% for item in site.data.nav %}
+      <a href="{{ site.baseurl }}{{ item.link }}"><div>{{ item.title }}</div></a>
+    {% endfor %}
+  </div>
+</nav>
+
 <div class="container">
   <content class="row">
     <div class="column">
@@ -20,8 +28,10 @@ layout: base
   </content>
 
   <footer>
-    <div style="text-align: left">Queer publishing</div>
-    <div style="text-align: center; flex: 0.1; font-style: normal">❤️</div>
-    <div style="text-align: right">&copy; 2019 <a href="https://radiolevity.com">Finn James</a></div>
+    <div id="footer_bar">
+      <div style="text-align: left">Queer publishing</div>
+      <div style="text-align: center; flex: 0.1; font-style: normal">❤️</div>
+      <div style="text-align: right">&copy; 2019 <a style="color: inherit" href="https://radiolevity.com">Finn James</a></div>
+    </div>
   </footer>
 </div>

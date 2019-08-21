@@ -1,11 +1,16 @@
 
-$black: #1f2328;
-$white: #fcf3e8;
-$accent: #ad649d;
+$black: #2a2b38;
+$white: #fcf4ea;
+$violet: #8F71DA;
+$magenta: #CC74C8;
+$red: #D97D71;
 
-$light-black: #aaa; // lighten($black, 38%);
+$accent: $magenta;
+
+$light-black: desaturate(lighten($black, 64%), 10%);
 $dark-accent: desaturate(darken($accent, 20%), 12%);
 
 $typecolor: $black;
 
-$fontstack: "Crimson Text", Arial, sans-serif;
+$fontstack: "Crimson Pro", Georgia, serif;
+$titlestack: "Playfair Display", $fontstack;

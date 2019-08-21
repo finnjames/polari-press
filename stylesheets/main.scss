@@ -5,7 +5,7 @@
 @import '_palette';
 @import '_typography';
 
-$content_width: 700px;
+$content_width: 600px;
 
 ::selection {
   background-color: lighten($accent, 20%);
@@ -27,11 +27,19 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   // text-transform: uppercase;
   // letter-spacing: 1px;
-  font-family: $fontstack;
+  font-style: italic;
+  font-family: $titlestack;
 }
 
 p {
   margin-bottom: 1rem;
+}
+
+a {
+  color: $black;
+  &:hover {
+    color: $accent;
+  }
 }
 
 blockquote {
@@ -63,19 +71,19 @@ header {
     height: 10rem;
     h1 {
       padding: 0;
-      margin-bottom: 0;
+      margin-bottom: 8px;
       font-size: 3.2rem;
       // letter-spacing: 3px;
       // text-transform: uppercase;
+      font-style: italic;
       font-weight: 700;
-      font-family: $fontstack;
+      font-family: $titlestack;
     }
     span {
-      font-size: 2rem;
+      font-size: 1.8rem;
       display: block;
       width: auto;
       padding: 0 0 0.8rem;
-      font-style: italic;
       line-height: 2.2rem;
       margin-bottom: 1rem;
     }
@@ -86,34 +94,77 @@ header {
   header #title {
     height: 12rem;
     h1 {
-    font-size: 5rem;
+    font-size: 4.8rem;
     letter-spacing: 2px;
     }
     span {
-      font-size: 2.4rem;
+      font-size: 2rem;
     }
+  }
+}
+
+// nav stuff
+nav {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: $light_black;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  #navbar {
+    max-width: $content_width;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-style: italic;
+    // font-size: 1.4rem;
+    padding-top: 3px;
+  }
+}
+
+@media (min-width: 550px) {
+  #navbar {
+    font-size: 2.2rem;
   }
 }
 
 .container {
   width: 100vw;
-  max-width: $content_width;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  padding: 0;
+  align-items: center;
 }
 
 content {
+  width: 100%;
+  max-width: $content_width;
   flex: 1 0 auto;
   margin-top: 0;
-  padding: 0.1rem;
+  border: none;
+  margin: 0;
   a {
     text-decoration: underline;
+  }
+  .column {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: $content_width) {
+  content {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: $light_black;
   }
 }
 
 @media (min-width: 550px) {
-  padding: 1rem;
+  content {
+    padding: 1.6rem;
+  }
 }
 
 // utility classes
@@ -146,24 +197,24 @@ content {
 }
 
 footer {
-  // padding: 2rem 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 0.4rem;
-  color: $light-black;
-  // text-transform: uppercase;
-  font-style: italic;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1rem;
-  padding: 0.2rem 0 1.8rem;
-  div {
-    flex: 1;
-  }
-  img {
-    height: 30px;
-    width: 30px;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: $light_black;
+  width: 100vw;
+  #footer_bar {
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: $light-black;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1rem;
+    padding: 1.8rem 0 1.8rem;
+    div {
+      flex: 1;
+    }
   }
 }
