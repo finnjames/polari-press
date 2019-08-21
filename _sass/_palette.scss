@@ -1,0 +1,11 @@
+
+$black: #1f2328;
+$white: #fcf3e8;
+$accent: #ad649d;
+
+$light-black: #aaa; // lighten($black, 38%);
+$dark-accent: desaturate(darken($accent, 20%), 12%);
+
+$typecolor: $black;
+
+$fontstack: "Crimson Text", Arial, sans-serif;

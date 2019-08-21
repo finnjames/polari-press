@@ -1,0 +1,169 @@
+---
+---
+
+@import 'skeleton';
+@import '_palette';
+@import '_typography';
+
+$content_width: 700px;
+
+::selection {
+  background-color: lighten($accent, 20%);
+}
+
+html {
+  background-color: $white;
+  font-size: 10pt;
+}
+
+body {
+  font-family: $fontstack;
+  color: $typecolor;
+  font-weight: 400;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  // text-transform: uppercase;
+  // letter-spacing: 1px;
+  font-family: $fontstack;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  border-left: solid 4px $accent;
+  margin-left: 0.8rem;
+  padding-left: 1.4rem;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
+  width: auto;
+  padding: 0;
+  padding-top: 1rem;
+  margin-bottom: -1.4rem;
+}
+
+header {
+  background: $white;
+  color: $black;
+  padding-top: 1rem;
+  #title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    h1 {
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 3.2rem;
+      // letter-spacing: 3px;
+      // text-transform: uppercase;
+      font-weight: 700;
+      font-family: $fontstack;
+    }
+    span {
+      font-size: 2rem;
+      display: block;
+      width: auto;
+      padding: 0 0 0.8rem;
+      font-style: italic;
+      line-height: 2.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  header #title {
+    height: 12rem;
+    h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+    }
+    span {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.container {
+  width: 100vw;
+  max-width: $content_width;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+content {
+  flex: 1 0 auto;
+  margin-top: 0;
+  padding: 0.1rem;
+  a {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 550px) {
+  padding: 1rem;
+}
+
+// utility classes
+.center {
+  display: block;
+  text-align: center;
+}
+
+.white-text {
+  color: $white;
+}
+
+.black-text {
+  color: $black;
+}
+
+.accent-text {
+  color: $accent;
+}
+
+.icon {
+  font-family: Icomoon;
+}
+
+// more specific stylings
+
+.quoted {
+  margin-left: auto;
+  text-align: right;
+}
+
+footer {
+  // padding: 2rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 0.4rem;
+  color: $light-black;
+  // text-transform: uppercase;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1rem;
+  padding: 0.2rem 0 1.8rem;
+  div {
+    flex: 1;
+  }
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
