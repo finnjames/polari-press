@@ -2,7 +2,7 @@ title: radiolevity Web Design
 email: radiolevity.design@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Friendly neighborhood web design
-baseurl: "/" 
+baseurl: "" 
 url: "https://radiolevity.com"
 github_username:  radiolevity
 

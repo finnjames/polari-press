@@ -1,16 +1,51 @@
 
-$black: #2a2b38;
-$white: #fcf4ea;
-$violet: #8F71DA;
-$magenta: #CC74C8;
-$red: #D97D71;
+$black: #151719;
+$white: #fcfbf9;
+$magenta: #bf415e;
+$yellow: #e8d76a;
+$green: #69bf57;
+$blue: #3d79bf;
 
 $accent: $magenta;
+
+$gradient: repeating-linear-gradient(
+  90deg,
+  $magenta 0%,
+  $magenta 25%,
+  $blue 25%,
+  $blue 50%,
+  $green 50%,
+  $green 75%,
+  $yellow 75%,
+  $yellow 100%,
+);
+
+$gradient-white: repeating-linear-gradient(
+  90deg,
+  $magenta 0%,
+  $magenta 20%,
+  $white 20%,
+  $white 25%,
+  $yellow 25%,
+  $yellow 45%,
+  $white 45%,
+  $white 50%,
+  $green 50%,
+  $green 70%,
+  $white 70%,
+  $white 75%,
+  $blue 75%,
+  $blue 95%,
+  $white 95%,
+  $white 100%,
+);
 
 $light-black: desaturate(lighten($black, 64%), 10%);
 $dark-accent: desaturate(darken($accent, 20%), 12%);
 
 $typecolor: $black;
 
-$fontstack: "Crimson Pro", Georgia, serif;
-$titlestack: "Playfair Display", $fontstack;
+$fontstack: "Raleway", Georgia, serif;
+$fontweight: 400;
+$titlestack: $fontstack;
+$boldweight: 800;

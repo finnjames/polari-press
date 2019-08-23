@@ -8,7 +8,7 @@
 $content_width: 600px;
 
 ::selection {
-  background-color: lighten($accent, 20%);
+  background-color: rgba(lighten($accent, 20%), 0.3);
 }
 
 html {
@@ -19,15 +19,14 @@ html {
 body {
   font-family: $fontstack;
   color: $typecolor;
-  font-weight: 400;
+  font-weight: $fontweight;
 }
 
 h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: $boldweight;
   margin-bottom: 1rem;
   // text-transform: uppercase;
   // letter-spacing: 1px;
-  font-style: italic;
   font-family: $titlestack;
 }
 
@@ -75,9 +74,22 @@ header {
       font-size: 3.2rem;
       // letter-spacing: 3px;
       // text-transform: uppercase;
-      font-style: italic;
-      font-weight: 700;
+      // font-style: italic;
       font-family: $titlestack;
+      font-weight: $boldweight;
+      color: $black;
+      cursor: pointer;
+      &:hover {
+        background-repeat: repeat-x;
+        background-size: 100px 100%;
+        background-position: 0% 0%;
+        background-image: $gradient;
+        animation: barberpole 2s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
     }
     span {
       font-size: 1.8rem;
@@ -87,6 +99,15 @@ header {
       line-height: 2.2rem;
       margin-bottom: 1rem;
     }
+  }
+}
+
+@keyframes barberpole {
+  0% {
+    background-position: 0px 0%;
+  }
+  100% {
+    background-position: 100px 0%;
   }
 }
 
@@ -117,9 +138,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-style: italic;
+    font-weight: $boldweight;
     // font-size: 1.4rem;
-    padding-top: 3px;
+    a div {
+      color: $black;
+      &:hover {
+        color: inherit;
+      }
+    }
   }
 }
 
@@ -210,7 +236,7 @@ footer {
     color: $light-black;
     font-style: italic;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: $fontweight;
     line-height: 1rem;
     padding: 1.8rem 0 1.8rem;
     div {
