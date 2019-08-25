@@ -15,7 +15,8 @@ layout: base
 <nav>
   <div id="navbar">
     {% for item in site.data.nav %}
-      <a style="color: {% cycle '#bf415e', '#e8d76a', '#69bf57', '#3d79bf' %}" href="{{ site.baseurl }}/{{ item.link }}"><div>{{ item.title }}</div></a>
+      {% assign href = site.baseurl | append: '/' | append: item.link %}
+      <a style="color: {% cycle '#bf415e', '#e8d76a', '#69bf57', '#3d79bf' %}" href="{{ site.baseurl }}/{{ item.link }}"><div class="{% if page.url == href %}active{% endif %}">{{ item.title }}</div></a>
     {% endfor %}
   </div>
 </nav>
@@ -30,7 +31,7 @@ layout: base
   <footer>
     <div id="footer_bar">
       <div style="text-align: left">Queer publishing</div>
-      <div style="text-align: center; flex: 0.2; font-style: normal">❤️💛💚💙💜</div>
+      <div style="text-align: center; font-style: normal">❤️💛💚💙💜</div>
       <div style="text-align: right">&copy; 2019 <a style="color: inherit" href="https://radiolevity.com">Finn James</a></div>
     </div>
   </footer>

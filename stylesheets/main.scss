@@ -35,9 +35,11 @@ p {
 }
 
 a {
-  color: $black;
+  color: $accent;
+  text-decoration: none;
+  font-weight: $boldweight;
   &:hover {
-    color: $accent;
+    color: lighten($accent, 20%);
   }
 }
 
@@ -142,8 +144,14 @@ nav {
     // font-size: 1.4rem;
     a div {
       color: $black;
+      opacity: 1;
+      &.active {
+        border-bottom: solid 6px $black;
+        border-top: solid 6px transparent;
+      }
       &:hover {
         color: inherit;
+        opacity: 1;
       }
     }
   }
@@ -171,9 +179,6 @@ content {
   margin-top: 0;
   border: none;
   margin: 0;
-  a {
-    text-decoration: underline;
-  }
   .column {
     padding: 0 1rem;
   }
