@@ -7,7 +7,7 @@ layout: base
     <img style="width: 120px" src="{{ site.baseurl}}/assets/images/radiolevity-logo.svg" />
   </div> -->
   <div id="title">
-    <a href="{{site.baseurl}}/"><h1>Polari Press</h1></a>
+    <a href="{{site.baseurl}}/">Polari Press</a>
     <span class="center">Britain's premiere queer publishing house</span>
   </div>
 </header>
@@ -16,7 +16,7 @@ layout: base
   <div id="navbar">
     {% for item in site.data.nav %}
       {% assign href = site.baseurl | append: '/' | append: item.link %}
-      <a style="color: {% cycle '#bf415e', '#e8d76a', '#69bf57', '#3d79bf' %}" href="{{ site.baseurl }}/{{ item.link }}"><div class="{% if page.url == href %}active{% endif %}">{{ item.title }}</div></a>
+      <a style="color: {% cycle '#a82e1e', '#ffd149', '#199e0f', '#1a4fcc' %}" href="{{ site.baseurl }}/{{ item.link }}"><div class="{% if page.url == href %}active{% endif %}">{{ item.title }}</div></a>
     {% endfor %}
   </div>
 </nav>

@@ -4,7 +4,7 @@ title: Polari Press About
 permalink: /about
 ---
 
-#### Mission Statement
+### Mission Statement
 
 Polari is a code-language crafted by gay British men (and to a lesser extent lesbians) in the 1960-90s to evade homophobic normies and undercover policemen. Pulling from dynamic influences such as Yiddish, Romani, and the drug subculture of the 60’s, the language is peppered with colorful colloquialisms like ‘eek’ (face), ‘fantabulosa’ (wonderful), and ‘alamo’ (hot for you). Though it has died out in use, the legacy of its objective persists: the desire to forge an independent language, a reality devoid of shame, persecution, and invisibility. 
 

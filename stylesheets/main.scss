@@ -22,12 +22,16 @@ body {
   font-weight: $fontweight;
 }
 
-h2, h3, h4, h5, h6 {
+#title h1, h2 {
+  font-family: $titlestack;
+  letter-spacing: 4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: $boldweight;
   margin-bottom: 1rem;
-  // text-transform: uppercase;
-  // letter-spacing: 1px;
-  font-family: $titlestack;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 p {
@@ -70,16 +74,18 @@ header {
     align-items: center;
     justify-content: center;
     height: 10rem;
-    h1 {
+    a {
       padding: 0;
       margin-bottom: 8px;
       font-size: 3.2rem;
-      // letter-spacing: 3px;
-      // text-transform: uppercase;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      line-height: 3.6rem;
       // font-style: italic;
       font-family: $titlestack;
       font-weight: $boldweight;
       color: $black;
+      margin-left: -3px; // visual
       cursor: pointer;
       &:hover {
         background-repeat: repeat-x;
@@ -116,9 +122,11 @@ header {
 @media (min-width: 550px) {
   header #title {
     height: 12rem;
-    h1 {
-    font-size: 4.8rem;
-    letter-spacing: 2px;
+    a {
+      font-size: 5.4rem;
+      letter-spacing: 8px;
+      line-height: 5rem;
+      margin-right: -8px; // visual
     }
     span {
       font-size: 2rem;
@@ -247,5 +255,51 @@ footer {
     div {
       flex: 1;
     }
+  }
+}
+
+#catalogue {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.book {
+  border: $accent solid 1.8rem;
+  height: 28rem;
+  width: 20rem;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    color: $black;
+    font-size: 2.8rem;
+    font-family: $fontstack;
+    text-transform: uppercase;
+    width: 95%;
+    display: block;
+    text-align: center;
+    // height: 6rem;
+  }
+  h2, h3 {
+    color: $black;
+    font-size: 1.4rem;
+    font-family: $fontstack;
+    font-weight: $fontweight;
+    letter-spacing: 1px;
+    text-transform: none;
+    width: 80%;
+    display: block;
+    text-align: center;
   }
 }

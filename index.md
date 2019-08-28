@@ -4,13 +4,13 @@ title: Polari Press
 permalink: /
 ---
 
-#### The studio was filled with the rich odour of roses
-and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.
+### The studio
+was filled with the rich odour of roses and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.
 
-##### From the corner
+#### From the corner
 of the divan of Persian saddle-bags on which he was lying, smoking, as was his custom, innumerable cigarettes, Lord Henry Wotton could just catch the gleam of the honey-sweet and honey-coloured blossoms of a laburnum, whose tremulous branches seemed hardly able to bear the burden of a beauty so flamelike as theirs; and now and then the fantastic shadows of birds in flight flitted across the long tussore-silk curtains that were stretched in front of the huge window, producing a kind of momentary Japanese effect, and making him think of those pallid, jade-faced painters of Tokyo who, through the medium of an art that is necessarily immobile, seek to convey the sense of swiftness and motion. The sullen murmur of the bees shouldering their way through the long unmown grass, or circling with monotonous insistence round the dusty gilt horns of the straggling woodbine, seemed to make the stillness more oppressive. The dim roar of London was like the bourdon note of a distant organ.
 
-#### In the centre of the room
+### In the centre of the room
 clamped to an upright easel, stood the full-length portrait of a young man of extraordinary personal beauty, and in front of it, some little distance away, was sitting the artist himself, Basil Hallward, whose sudden disappearance some years ago caused, at the time, such public excitement and gave rise to so many strange conjectures.
 
 As the painter looked at the gracious and comely form he had so skilfully mirrored in his art, a smile of pleasure passed across his face, and seemed about to linger there. But he suddenly started up, and closing his eyes, placed his fingers upon the lids, as though he sought to imprison within his brain some curious dream from which he feared he might awake.
@@ -23,7 +23,7 @@ Lord Henry elevated his eyebrows and looked at him in amazement through the thin
 
 "I know you will laugh at me," he replied, "but I really can't exhibit it. I have put too much of myself into it."
 
-#### Lord Henry stretched himself out on the divan and laughed
+### Lord Henry stretched himself out on the divan and laughed
 
 "Yes, I knew you would; but it is quite true, all the same."
 

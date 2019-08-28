@@ -1,17 +1,17 @@
 
-$black: #151719;
-$white: #fcfbf9;
-$magenta: #bf415e;
-$yellow: #e8d76a;
-$green: #69bf57;
-$blue: #3d79bf;
+$black: #0c0c0c;
+$white: #fcf3e0;
+$red: #a82e1e;
+$yellow: #ffd149;
+$green: #199e0f;
+$blue: #1a4fcc;
 
-$accent: $magenta;
+$accent: $red;
 
 $gradient: repeating-linear-gradient(
   90deg,
-  $magenta 0%,
-  $magenta 25%,
+  $red 0%,
+  $red 25%,
   $blue 25%,
   $blue 50%,
   $green 50%,
@@ -20,32 +20,12 @@ $gradient: repeating-linear-gradient(
   $yellow 100%,
 );
 
-$gradient-white: repeating-linear-gradient(
-  90deg,
-  $magenta 0%,
-  $magenta 20%,
-  $white 20%,
-  $white 25%,
-  $yellow 25%,
-  $yellow 45%,
-  $white 45%,
-  $white 50%,
-  $green 50%,
-  $green 70%,
-  $white 70%,
-  $white 75%,
-  $blue 75%,
-  $blue 95%,
-  $white 95%,
-  $white 100%,
-);
-
 $light-black: desaturate(lighten($black, 64%), 10%);
 $dark-accent: desaturate(darken($accent, 20%), 12%);
 
 $typecolor: $black;
 
-$fontstack: "Raleway", Georgia, serif;
-$fontweight: 400;
-$titlestack: $fontstack;
-$boldweight: 800;
+$fontstack: "Futura PT", Helvetica, sans-serif;
+$fontweight: 300;
+$titlestack: "Joschmi", $fontstack;
+$boldweight: 700;
