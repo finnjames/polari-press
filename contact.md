@@ -6,4 +6,4 @@ permalink: /contact
 
 ### Contact
 
-*email:* <a href="mailto:polari.press@gmail.com">polari.press@gmail.com</a>
+*email:* <a href="mailto:polari.press@outlook.com">polari.press@outlook.com</a>

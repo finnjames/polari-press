@@ -42,11 +42,11 @@ p {
 }
 
 a {
-  color: $accent;
+  color: $red;
   text-decoration: none;
   font-weight: $boldweight;
   &:hover {
-    color: lighten($accent, 20%);
+    color: $blue;
   }
 }
 
@@ -80,7 +80,7 @@ header {
     a {
       padding: 0;
       margin-bottom: 8px;
-      font-size: 3.2rem;
+      font-size: 4.0rem;
       letter-spacing: 1px;
       text-transform: uppercase;
       line-height: 3.6rem;
@@ -142,15 +142,16 @@ nav {
   border-width: 1px 0;
   border-style: solid;
   border-color: $light_black;
-  height: 4.6rem;
+  // height: 4.6rem;
   display: flex;
   justify-content: center;
   #navbar {
     max-width: $content_width;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-weight: $boldweight;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -159,6 +160,7 @@ nav {
       color: $black;
       opacity: 1;
       padding: 0 0.8rem;
+      // width: 50%;
       border: solid 6px transparent;
       &.active {
         // color: $white;
@@ -174,7 +176,11 @@ nav {
 
 @media (min-width: 550px) {
   #navbar {
+    flex-wrap: nowrap;
     font-size: 2.2rem;
+    a div {
+      width: auto;
+    }
   }
 }
 
